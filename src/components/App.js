@@ -2,19 +2,10 @@ import React, { Component } from 'react';
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import Title from './Title';
-import profile from '../assets/profileImage.jpg';
+import profile from '../assets/pradhumna.jpg';
 
 class App extends Component{
      state = { displayBio : false };
-    
-    // constructor() {
-    //     super();
-    //     this.state = { displayBio: false };
-
-    //     console.log('Component this', this);
-
-    //     this.toggleDisplayBio =  this.toggleDisplayBio.bind(this);
-    // }
 
     toggleDisplayBio = () => {
         this.setState({ displayBio: !this.state.displayBio });
@@ -50,11 +41,5 @@ class App extends Component{
         )
     }
 }
-
-// const AppWithHeader = ()  => {
-//     return (
-//         <Header Component = {App} />
-//     )
-// }
 
 export default App;
